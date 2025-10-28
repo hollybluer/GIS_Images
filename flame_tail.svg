@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="meteorgrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="param(fill)" />
+      <stop offset="100%" stop-color="darkorange" />
+    </radialGradient>
+  </defs>
+  <!-- Flame tail -->
+  <path d="M30 40 Q10 50, 30 60 Q20 50, 30 40 Z"
+        fill="orange" opacity="0.8"/>
+  <path d="M35 42 Q15 50, 35 58 Q25 50, 35 42 Z"
+        fill="gold" opacity="0.6"/>
+  <!-- Meteor body -->
+  <circle cx="55" cy="50" r="15"
+          fill="url(#meteorgrad)"
+          stroke="param(outline)" stroke-width="3"/>
+</svg>
